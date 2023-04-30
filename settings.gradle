@@ -1,3 +1,4 @@
 rootProject.name = 'online-taxi'
 include 'api-passenger'
+include 'service-verificationCode'
 

@@ -6,8 +6,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages = "com.api.*")
-public class ApiPassengerApplication {
+public class VerificationCodeApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ApiPassengerApplication.class, args);
+        SpringApplication.run(VerificationCodeApplication.class, args);
     }
 }
