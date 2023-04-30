@@ -14,15 +14,16 @@ java {
 }
 
 dependencies {
-    // Spring
-    implementation 'org.springframework.boot:spring-boot-starter:2.4.2'
-    implementation 'org.springframework.boot:spring-boot-starter-web:2.4.2'
+    implementation "org.springframework.boot:spring-boot-starter:${springBootVersion}"
+    implementation "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+    implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config:${nacosVersion}"
+    implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery:${nacosVersion}"
+    implementation "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    implementation project(':common')
 
-//    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 
-    implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config:2021.1'
-    implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery:2021.1'
 }
+
 
 test {
     useJUnitPlatform()

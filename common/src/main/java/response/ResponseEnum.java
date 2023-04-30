@@ -1,4 +1,4 @@
-package com.api.response;
+package response;
 
 public enum ResponseEnum {
 

@@ -1,6 +1,6 @@
-package com.api.handler;
+package handler;
 
-import com.api.exception.VerificationCodeException;
+import exception.VerificationCodeException;
 import com.api.response.ResponseEnum;
 import com.api.response.ServerResponseEntity;
 import org.slf4j.Logger;

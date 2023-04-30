@@ -1,4 +1,4 @@
-package com.api.exception;
+package exception;
 
 import com.api.response.ResponseEnum;
 

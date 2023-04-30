@@ -1,4 +1,4 @@
-package com.api.utils;
+package utils;
 
 import java.security.SecureRandom;
 import java.util.Random;

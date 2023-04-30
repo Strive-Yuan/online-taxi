@@ -1,7 +1,7 @@
 package com.api.service;
 
-import com.api.utils.RandomUtils;
 import org.springframework.stereotype.Service;
+import utils.RandomUtils;
 
 @Service
 public class NumberCodeService {
