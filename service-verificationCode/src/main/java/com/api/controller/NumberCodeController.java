@@ -5,12 +5,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import response.ResponseEnum;
 import response.ServerResponseEntity;
 
 import javax.annotation.Resource;
-import javax.websocket.server.PathParam;
 
 @RestController
 @RequestMapping("api")
@@ -20,8 +20,8 @@ public class NumberCodeController {
     @Resource
     NumberCodeService numberCodeService;
 
-    @GetMapping("number_code")
-    public ServerResponseEntity<String> getNumberCode(@PathParam("size") Integer size) {
+    @GetMapping("/number_code")
+    public ServerResponseEntity<String> getNumberCode(@RequestParam("size") Integer size) {
         if (size == null) {
             return ServerResponseEntity.fail(ResponseEnum.PARAM_ERROR);
         }

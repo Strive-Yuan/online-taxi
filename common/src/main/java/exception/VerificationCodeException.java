@@ -1,6 +1,7 @@
 package exception;
 
-import com.api.response.ResponseEnum;
+
+import response.ResponseEnum;
 
 public class VerificationCodeException extends RuntimeException {
 
