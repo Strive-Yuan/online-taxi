@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 import utils.RandomUtils;
 
 @Service
-public class NumberCodeService {
+public class VerificationCodeService {
 
     public String getNumberCode(Integer size) {
         return RandomUtils.generateRandomString(size);

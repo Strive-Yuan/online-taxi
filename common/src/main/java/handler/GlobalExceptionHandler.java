@@ -69,7 +69,7 @@ public class GlobalExceptionHandler {
             return ResponseEntity.status(HttpStatus.OK).body(ServerResponseEntity.fail(responseEnum, e.getObject()));
         }
         // 失败返回消息 状态码固定为直接显示消息的状态码
-        return ResponseEntity.status(HttpStatus.OK).body(ServerResponseEntity.showFailMsg(e.getMessage()));
+        return ResponseEntity.status(HttpStatus.OK).body(ServerResponseEntity.fail(e.getMessage()));
     }
 
     @ExceptionHandler(Exception.class)

@@ -1,9 +1,14 @@
 server:
-  port: 8080
+  port: 8082
   ssl:
     enabled: false
 
 spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://101.43.98.156:3306/service_passenger_user
+    username: root
+    password: yjhui
   main:
     allow-bean-definition-overriding: true
   cloud:
@@ -11,7 +16,7 @@ spring:
       discovery:
         server-addr: 101.43.98.156:8848
   application:
-    name: api-passenger
+    name: api-passenger-user
 redisson:
   address: redis://101.43.98.156:6379
   password: 123456
